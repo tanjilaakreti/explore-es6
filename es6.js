@@ -258,3 +258,19 @@ class Bus extends Vehicle {
 const bus = new Bus('audi', 250, 5, 1200);
 console.log(bus);
 
+// 08-05-25
+const product2 = [
+    { id: 1, name: 'lenovo', price: 51000 },
+    { id: 2, name: 'dell', price: 41000 },
+    { id: 3, name: 'hp', price: 81000 },
+    { id: 4, name: 'mac', price: 91000 }
+];
+
+// map
+const nume = product2.map(p => p.price);
+console.log(nume);
+
+// reduse
+const nums = product2.reduce((p, c) => p + c.price, 0);
+console.log(nums);
+
